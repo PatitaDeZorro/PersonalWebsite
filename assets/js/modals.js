@@ -3,7 +3,7 @@
 
   const modalCarousels = [];
   const modalTimers = new Map();
-  const carouselTimers = [];
+  const autoAdvanceDelay = 5000;
 
   function domReady() {
     if (window.ContentUtils?.domReady) {
@@ -132,17 +132,6 @@
         });
 
         modalCarousels.push(swiper);
-
-        if (images.length > 1) {
-          const timer = window.setInterval(() => {
-            const modal = gallery.closest(".modal");
-            if (!modal?.classList.contains("show") || swiper.destroyed) return;
-
-            advanceCarousel(swiper);
-          }, 4200);
-
-          carouselTimers.push(timer);
-        }
       } else {
         activateFallbackCarousel(gallery);
       }
@@ -177,7 +166,7 @@
 
     const timer = window.setInterval(() => {
       carousels.forEach(advanceCarousel);
-    }, 4200);
+    }, autoAdvanceDelay);
 
     modalTimers.set(modal, timer);
   }
@@ -219,8 +208,6 @@
     modalCarousels.length = 0;
     modalTimers.forEach((timer) => window.clearInterval(timer));
     modalTimers.clear();
-    carouselTimers.forEach((timer) => window.clearInterval(timer));
-    carouselTimers.length = 0;
   }
 
   function prepareImageModals() {
