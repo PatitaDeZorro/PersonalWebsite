@@ -1,0 +1,581 @@
+[
+  {
+    "id": "portfolio-web1-modal",
+    "category": "app",
+    "image": "assets/img/portfolio/app-1.webp",
+    "gallery": [
+      "assets/img/portfolio/app-1.webp",
+      "assets/img/portfolio/app-2.webp",
+      "assets/img/portfolio/app-3.webp"
+    ],
+    "badges": [
+      "GitHub Pages",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "JSON",
+      "Bootstrap"
+    ],
+    "link": {
+      "href": "https://github.com/PatitaDeZorro",
+      "external": true,
+      "label": {
+        "es": "Ver perfil",
+        "en": "View profile"
+      }
+    },
+    "content": {
+      "es": {
+        "category": "Web",
+        "title": "Portafolio personal",
+        "description": "Sitio estático bilingüe con enfoque en privacidad y mantenimiento.",
+        "body": "Proyecto base para presentar perfil profesional, servicios y trabajos en una sola experiencia compatible con GitHub Pages.",
+        "points": [
+          "Arquitectura estática sin dependencia de backend.",
+          "Contenido bilingüe controlado desde archivos JSON.",
+          "Diseño revisado para escritorio y dispositivos móviles."
+        ]
+      },
+      "en": {
+        "category": "Web",
+        "title": "Personal portfolio",
+        "description": "Static bilingual site focused on privacy and maintainability.",
+        "body": "Base project for presenting a professional profile, services, and work samples in a single experience compatible with GitHub Pages.",
+        "points": [
+          "Static architecture with no backend dependency.",
+          "Bilingual content controlled from JSON files.",
+          "Design reviewed for desktop and mobile devices."
+        ]
+      }
+    }
+  },
+  {
+    "id": "portfolio-data1-modal",
+    "category": "product",
+    "image": "assets/img/portfolio/product-1.webp",
+    "gallery": [
+      "assets/img/portfolio/product-1.webp",
+      "assets/img/portfolio/product-2.webp",
+      "assets/img/portfolio/product-3.webp"
+    ],
+    "badges": [
+      "Data",
+      "Charts",
+      "Metrics",
+      "Reports"
+    ],
+    "link": {
+      "href": "#contact",
+      "external": false,
+      "label": {
+        "es": "Solicitar algo similar",
+        "en": "Request something similar"
+      }
+    },
+    "content": {
+      "es": {
+        "category": "Datos",
+        "title": "Dashboard de indicadores",
+        "description": "Visualización de métricas para seguimiento y toma de decisiones.",
+        "body": "Concepto de tablero para transformar datos dispersos en indicadores claros, comparables y accionables.",
+        "points": [
+          "Preparación y limpieza básica de información.",
+          "Lectura rápida de indicadores principales.",
+          "Salida pensada para reportes y seguimiento."
+        ]
+      },
+      "en": {
+        "category": "Data",
+        "title": "Metrics dashboard",
+        "description": "Metric visualization for tracking and decision-making.",
+        "body": "Dashboard concept for turning scattered data into clear, comparable, and actionable indicators.",
+        "points": [
+          "Basic data preparation and cleaning.",
+          "Fast reading of main indicators.",
+          "Output designed for reports and follow-up."
+        ]
+      }
+    }
+  },
+  {
+    "id": "portfolio-consulting1-modal",
+    "category": "branding",
+    "image": "assets/img/portfolio/branding-1.webp",
+    "gallery": [
+      "assets/img/portfolio/branding-1.webp",
+      "assets/img/portfolio/branding-2.webp",
+      "assets/img/portfolio/branding-3.webp"
+    ],
+    "badges": [
+      "Audit",
+      "UX",
+      "Responsive",
+      "Privacy"
+    ],
+    "link": {
+      "href": "#contact",
+      "external": false,
+      "label": {
+        "es": "Solicitar algo similar",
+        "en": "Request something similar"
+      }
+    },
+    "content": {
+      "es": {
+        "category": "Consultoría",
+        "title": "Diagnóstico web",
+        "description": "Revisión de estructura, errores visibles y oportunidades de mejora.",
+        "body": "Revisión práctica para detectar problemas que afectan navegación, mantenimiento, enlaces, privacidad y percepción visual.",
+        "points": [
+          "Búsqueda de errores visibles y referencias rotas.",
+          "Validación de comportamiento en móvil.",
+          "Reporte con hallazgos y siguientes pasos."
+        ]
+      },
+      "en": {
+        "category": "Consulting",
+        "title": "Web diagnosis",
+        "description": "Review of structure, visible errors, and improvement opportunities.",
+        "body": "Practical review to detect issues that affect navigation, maintenance, links, privacy, and visual perception.",
+        "points": [
+          "Search for visible errors and broken references.",
+          "Mobile behavior validation.",
+          "Report with findings and next steps."
+        ]
+      }
+    }
+  },
+  {
+    "id": "portfolio-docs1-modal",
+    "category": "books",
+    "image": "assets/img/portfolio/books-1.webp",
+    "gallery": [
+      "assets/img/portfolio/books-1.webp",
+      "assets/img/portfolio/books-2.webp",
+      "assets/img/portfolio/books-3.webp"
+    ],
+    "badges": [
+      "Docs",
+      "Markdown",
+      "QA",
+      "Maintenance"
+    ],
+    "link": {
+      "href": "#contact",
+      "external": false,
+      "label": {
+        "es": "Solicitar algo similar",
+        "en": "Request something similar"
+      }
+    },
+    "content": {
+      "es": {
+        "category": "Documentos",
+        "title": "Documentación técnica",
+        "description": "Guías y reportes para explicar decisiones de implementación.",
+        "body": "Documentos orientados a dejar claro qué se cambió, por qué se cambió y cómo continuar sin perder contexto.",
+        "points": [
+          "Contexto suficiente para futuras iteraciones.",
+          "Registro de decisiones técnicas relevantes.",
+          "Enfoque en mantenimiento y transferencia de conocimiento."
+        ]
+      },
+      "en": {
+        "category": "Documents",
+        "title": "Technical documentation",
+        "description": "Guides and reports that explain implementation decisions.",
+        "body": "Documents focused on making clear what changed, why it changed, and how to continue without losing context.",
+        "points": [
+          "Enough context for future iterations.",
+          "Record of relevant technical decisions.",
+          "Focus on maintenance and knowledge transfer."
+        ]
+      }
+    }
+  },
+  {
+    "id": "portfolio-web2-modal",
+    "category": "app",
+    "image": "assets/img/portfolio/TorresDeHanoi/TorresDeHanoi_01.webp",
+    "gallery": [
+      "assets/img/portfolio/TorresDeHanoi/TorresDeHanoi_01.webp",
+      "assets/img/portfolio/TorresDeHanoi/TorresDeHanoi_02.webp",
+      "assets/img/portfolio/TorresDeHanoi/TorresDeHanoi_03.webp"
+    ],
+    "badges": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Game",
+      "Logic"
+    ],
+    "link": {
+      "href": "https://patitadezorro.github.io/Juego_TorresDeHanoi/",
+      "external": true,
+      "label": {
+        "es": "Abrir proyecto",
+        "en": "Open project"
+      }
+    },
+    "content": {
+      "es": {
+        "category": "Web",
+        "title": "Torres de Hanoi",
+        "description": "Juego de lógica donde se mueven discos entre torres siguiendo reglas precisas.",
+        "body": "Proyecto personal desarrollado para practicar la estructura de HTML, el estilo visual con CSS y la interacción con JavaScript mediante un juego clásico de resolución paso a paso.",
+        "points": [
+          "Interfaz construida con HTML para organizar torres, discos y controles.",
+          "Estilos en CSS para representar el tablero y mantener una experiencia visual clara.",
+          "Lógica en JavaScript para validar movimientos y reforzar el aprendizaje de eventos."
+        ]
+      },
+      "en": {
+        "category": "Web",
+        "title": "Towers of Hanoi",
+        "description": "Logic game where disks are moved between towers while following precise rules.",
+        "body": "Personal project developed to practice HTML structure, visual styling with CSS, and interaction with JavaScript through a classic step-by-step puzzle game.",
+        "points": [
+          "Interface built with HTML to organize towers, disks, and controls.",
+          "CSS styles used to represent the board and keep the visual experience clear.",
+          "JavaScript logic used to validate moves and reinforce event-handling practice."
+        ]
+      }
+    }
+  },
+  {
+    "id": "portfolio-data2-modal",
+    "category": "product",
+    "image": "assets/img/portfolio/product-2.webp",
+    "gallery": [
+      "assets/img/portfolio/product-2.webp",
+      "assets/img/portfolio/product-1.webp",
+      "assets/img/portfolio/product-3.webp"
+    ],
+    "badges": [
+      "Data",
+      "Cleanup",
+      "CSV",
+      "Reports"
+    ],
+    "link": {
+      "href": "#contact",
+      "external": false,
+      "label": {
+        "es": "Solicitar algo similar",
+        "en": "Request something similar"
+      }
+    },
+    "content": {
+      "es": {
+        "category": "Datos",
+        "title": "Limpieza de datos",
+        "description": "Preparación de información para análisis, reportes o automatización.",
+        "body": "Proceso para convertir información irregular en una base más consistente, legible y lista para analizarse.",
+        "points": [
+          "Preparación y limpieza básica de información.",
+          "Estructura pensada para reutilización.",
+          "Salida pensada para reportes y seguimiento."
+        ]
+      },
+      "en": {
+        "category": "Data",
+        "title": "Data cleaning",
+        "description": "Information preparation for analysis, reports, or automation.",
+        "body": "Process for turning irregular information into a more consistent, readable base ready for analysis.",
+        "points": [
+          "Basic data preparation and cleaning.",
+          "Structure designed for reuse.",
+          "Output designed for reports and follow-up."
+        ]
+      }
+    }
+  },
+  {
+    "id": "portfolio-consulting2-modal",
+    "category": "branding",
+    "image": "assets/img/portfolio/branding-2.webp",
+    "gallery": [
+      "assets/img/portfolio/branding-2.webp",
+      "assets/img/portfolio/branding-1.webp",
+      "assets/img/portfolio/branding-3.webp"
+    ],
+    "badges": [
+      "Content",
+      "UX",
+      "Navigation",
+      "SEO"
+    ],
+    "link": {
+      "href": "#contact",
+      "external": false,
+      "label": {
+        "es": "Solicitar algo similar",
+        "en": "Request something similar"
+      }
+    },
+    "content": {
+      "es": {
+        "category": "Consultoría",
+        "title": "Optimización de contenido",
+        "description": "Orden de secciones, textos y rutas para mejorar la experiencia.",
+        "body": "Ajuste de contenido para que la navegación tenga intención clara y cada sección aporte al objetivo del sitio.",
+        "points": [
+          "Texto organizado para lectura rápida.",
+          "Rutas internas más claras.",
+          "Reporte con hallazgos y siguientes pasos."
+        ]
+      },
+      "en": {
+        "category": "Consulting",
+        "title": "Content optimization",
+        "description": "Section, text, and route organization to improve the experience.",
+        "body": "Content adjustment so navigation has a clear intention and every section supports the site's objective.",
+        "points": [
+          "Text organized for fast reading.",
+          "Clearer internal routes.",
+          "Report with findings and next steps."
+        ]
+      }
+    }
+  },
+  {
+    "id": "portfolio-docs2-modal",
+    "category": "books",
+    "image": "assets/img/portfolio/books-2.webp",
+    "gallery": [
+      "assets/img/portfolio/books-2.webp",
+      "assets/img/portfolio/books-1.webp",
+      "assets/img/portfolio/books-3.webp"
+    ],
+    "badges": [
+      "Reports",
+      "Scope",
+      "Changelog",
+      "QA"
+    ],
+    "link": {
+      "href": "#contact",
+      "external": false,
+      "label": {
+        "es": "Solicitar algo similar",
+        "en": "Request something similar"
+      }
+    },
+    "content": {
+      "es": {
+        "category": "Documentos",
+        "title": "Reporte de proyecto",
+        "description": "Resumen claro de alcance, cambios realizados y próximos pasos.",
+        "body": "Reporte orientado a entregar una visión rápida del estado del proyecto y de las decisiones tomadas durante la iteración.",
+        "points": [
+          "Contexto suficiente para futuras iteraciones.",
+          "Reporte con hallazgos y siguientes pasos.",
+          "Enfoque en mantenimiento y transferencia de conocimiento."
+        ]
+      },
+      "en": {
+        "category": "Documents",
+        "title": "Project report",
+        "description": "Clear summary of scope, applied changes, and next steps.",
+        "body": "Report focused on delivering a quick view of project status and decisions made during the iteration.",
+        "points": [
+          "Enough context for future iterations.",
+          "Report with findings and next steps.",
+          "Focus on maintenance and knowledge transfer."
+        ]
+      }
+    }
+  },
+  {
+    "id": "portfolio-web3-modal",
+    "category": "app",
+    "image": "assets/img/portfolio/app-3.webp",
+    "gallery": [
+      "assets/img/portfolio/app-3.webp",
+      "assets/img/portfolio/app-1.webp",
+      "assets/img/portfolio/app-2.webp"
+    ],
+    "badges": [
+      "Responsive",
+      "Bootstrap",
+      "Accessibility",
+      "Mobile"
+    ],
+    "link": {
+      "href": "#contact",
+      "external": false,
+      "label": {
+        "es": "Solicitar algo similar",
+        "en": "Request something similar"
+      }
+    },
+    "content": {
+      "es": {
+        "category": "Web",
+        "title": "Interfaz responsiva",
+        "description": "Diseño adaptable para escritorio y dispositivos móviles.",
+        "body": "Propuesta enfocada en que el contenido conserve jerarquía, legibilidad y navegación cómoda en diferentes tamaños de pantalla.",
+        "points": [
+          "Validación de comportamiento en móvil.",
+          "Diseño revisado para escritorio y dispositivos móviles.",
+          "Controles claros y accesibles."
+        ]
+      },
+      "en": {
+        "category": "Web",
+        "title": "Responsive interface",
+        "description": "Adaptive design for desktop and mobile devices.",
+        "body": "Proposal focused on preserving content hierarchy, readability, and comfortable navigation across screen sizes.",
+        "points": [
+          "Mobile behavior validation.",
+          "Design reviewed for desktop and mobile devices.",
+          "Clear and accessible controls."
+        ]
+      }
+    }
+  },
+  {
+    "id": "portfolio-data3-modal",
+    "category": "product",
+    "image": "assets/img/portfolio/product-3.webp",
+    "gallery": [
+      "assets/img/portfolio/product-3.webp",
+      "assets/img/portfolio/product-1.webp",
+      "assets/img/portfolio/product-2.webp"
+    ],
+    "badges": [
+      "Data",
+      "Visualization",
+      "Summary",
+      "Reports"
+    ],
+    "link": {
+      "href": "#contact",
+      "external": false,
+      "label": {
+        "es": "Solicitar algo similar",
+        "en": "Request something similar"
+      }
+    },
+    "content": {
+      "es": {
+        "category": "Datos",
+        "title": "Reporte visual",
+        "description": "Presentación de datos con lectura rápida y estructura limpia.",
+        "body": "Formato visual para presentar resultados sin saturar al lector, priorizando jerarquía, síntesis y claridad.",
+        "points": [
+          "Lectura rápida de indicadores principales.",
+          "Salida pensada para reportes y seguimiento.",
+          "Contexto suficiente para futuras iteraciones."
+        ]
+      },
+      "en": {
+        "category": "Data",
+        "title": "Visual report",
+        "description": "Data presentation with fast reading and clean structure.",
+        "body": "Visual format for presenting results without overwhelming the reader, prioritizing hierarchy, synthesis, and clarity.",
+        "points": [
+          "Fast reading of main indicators.",
+          "Output designed for reports and follow-up.",
+          "Enough context for future iterations."
+        ]
+      }
+    }
+  },
+  {
+    "id": "portfolio-consulting3-modal",
+    "category": "branding",
+    "image": "assets/img/portfolio/branding-3.webp",
+    "gallery": [
+      "assets/img/portfolio/branding-3.webp",
+      "assets/img/portfolio/branding-1.webp",
+      "assets/img/portfolio/branding-2.webp"
+    ],
+    "badges": [
+      "Static",
+      "JSON",
+      "Components",
+      "GitHub Pages"
+    ],
+    "link": {
+      "href": "#contact",
+      "external": false,
+      "label": {
+        "es": "Solicitar algo similar",
+        "en": "Request something similar"
+      }
+    },
+    "content": {
+      "es": {
+        "category": "Consultoría",
+        "title": "Arquitectura estática",
+        "description": "Planeación de sitios compatibles con hosting estático.",
+        "body": "Diseño de estructura para crecer sin backend, usando archivos estáticos, JSON, componentes externos y rutas simples.",
+        "points": [
+          "Arquitectura estática sin dependencia de backend.",
+          "Estructura pensada para reutilización.",
+          "Enfoque en mantenimiento y transferencia de conocimiento."
+        ]
+      },
+      "en": {
+        "category": "Consulting",
+        "title": "Static architecture",
+        "description": "Planning static-hosting compatible sites.",
+        "body": "Structure design for growing without a backend, using static files, JSON, external components, and simple routes.",
+        "points": [
+          "Static architecture with no backend dependency.",
+          "Structure designed for reuse.",
+          "Focus on maintenance and knowledge transfer."
+        ]
+      }
+    }
+  },
+  {
+    "id": "portfolio-docs3-modal",
+    "category": "books",
+    "image": "assets/img/portfolio/books-3.webp",
+    "gallery": [
+      "assets/img/portfolio/books-3.webp",
+      "assets/img/portfolio/books-1.webp",
+      "assets/img/portfolio/books-2.webp"
+    ],
+    "badges": [
+      "Log",
+      "Tests",
+      "Findings",
+      "Maintenance"
+    ],
+    "link": {
+      "href": "#contact",
+      "external": false,
+      "label": {
+        "es": "Solicitar algo similar",
+        "en": "Request something similar"
+      }
+    },
+    "content": {
+      "es": {
+        "category": "Documentos",
+        "title": "Bitácora técnica",
+        "description": "Registro de pruebas, hallazgos y ajustes para mantenimiento.",
+        "body": "Bitácora para conservar evidencia de pruebas, verificaciones y cambios aplicados durante la evolución del proyecto.",
+        "points": [
+          "Registro de decisiones técnicas relevantes.",
+          "Búsqueda de errores visibles y referencias rotas.",
+          "Enfoque en mantenimiento y transferencia de conocimiento."
+        ]
+      },
+      "en": {
+        "category": "Documents",
+        "title": "Technical log",
+        "description": "Record of tests, findings, and adjustments for maintenance.",
+        "body": "Log for preserving evidence of tests, checks, and changes applied during the project's evolution.",
+        "points": [
+          "Record of relevant technical decisions.",
+          "Search for visible errors and broken references.",
+          "Focus on maintenance and knowledge transfer."
+        ]
+      }
+    }
+  }
+]

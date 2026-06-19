@@ -1,0 +1,152 @@
+[
+  {
+    "id": "service-static-modal",
+    "icon": "bi-window-sidebar",
+    "badges": ["GitHub Pages", "HTML", "CSS", "Bootstrap"],
+    "content": {
+      "es": {
+        "section": "Servicios",
+        "title": "Sitios web estáticos",
+        "description": "Portafolios, landing pages y sitios ligeros listos para GitHub Pages.",
+        "body": "Implementación de sitios rápidos, simples de publicar y preparados para crecer mediante archivos externos, JSON y componentes reutilizables.",
+        "points": ["Publicación compatible con GitHub Pages.", "Sin exponer datos personales innecesarios.", "Estructura clara para futuras iteraciones."],
+        "cta": "Solicitar información",
+        "close": "Cerrar"
+      },
+      "en": {
+        "section": "Services",
+        "title": "Static websites",
+        "description": "Portfolios, landing pages, and lightweight sites ready for GitHub Pages.",
+        "body": "Implementation of fast, simple-to-publish sites prepared to grow through external files, JSON, and reusable components.",
+        "points": ["Publishing compatible with GitHub Pages.", "No unnecessary exposure of personal data.", "Clear structure for future iterations."],
+        "cta": "Request information",
+        "close": "Close"
+      }
+    }
+  },
+  {
+    "id": "service-i18n-modal",
+    "icon": "bi-translate",
+    "badges": ["i18n", "JSON", "ES/EN", "UX"],
+    "content": {
+      "es": {
+        "section": "Servicios",
+        "title": "Experiencias bilingües",
+        "description": "Contenido en español e inglés con estructura mantenible basada en JSON.",
+        "body": "Organización de textos en archivos de idioma para que la interfaz pueda crecer sin duplicar páginas ni mezclar contenido con estructura.",
+        "points": ["Traducciones centralizadas en JSON.", "Cambio de idioma desde la interfaz.", "Consistencia entre secciones, tarjetas y modales."],
+        "cta": "Solicitar información",
+        "close": "Cerrar"
+      },
+      "en": {
+        "section": "Services",
+        "title": "Bilingual experiences",
+        "description": "Spanish and English content with a maintainable JSON-based structure.",
+        "body": "Organization of texts in language files so the interface can grow without duplicating pages or mixing content with structure.",
+        "points": ["Translations centralized in JSON.", "Language switching from the interface.", "Consistency across sections, cards, and modals."],
+        "cta": "Request information",
+        "close": "Close"
+      }
+    }
+  },
+  {
+    "id": "service-data-modal",
+    "icon": "bi-bar-chart",
+    "badges": ["Data", "Cleanup", "Visualization", "Reports"],
+    "content": {
+      "es": {
+        "section": "Servicios",
+        "title": "Análisis de datos",
+        "description": "Limpieza, organización y visualización básica de información para decisiones.",
+        "body": "Apoyo para transformar información en reportes comprensibles mediante limpieza, organización y representación visual de datos.",
+        "points": ["Depuración de datos inconsistentes.", "Visualización orientada a lectura rápida.", "Entrega de hallazgos en formato claro."],
+        "cta": "Solicitar información",
+        "close": "Cerrar"
+      },
+      "en": {
+        "section": "Services",
+        "title": "Data analysis",
+        "description": "Basic cleaning, organization, and visualization of information for decisions.",
+        "body": "Support for turning information into understandable reports through cleaning, organization, and visual representation of data.",
+        "points": ["Cleanup of inconsistent data.", "Visualization oriented toward quick reading.", "Findings delivered in a clear format."],
+        "cta": "Request information",
+        "close": "Close"
+      }
+    }
+  },
+  {
+    "id": "service-audit-modal",
+    "icon": "bi-search",
+    "badges": ["Audit", "Links", "Mobile", "QA"],
+    "content": {
+      "es": {
+        "section": "Servicios",
+        "title": "Revisión técnica",
+        "description": "Detección de errores visibles, enlaces rotos, problemas móviles y código muerto.",
+        "body": "Evaluación práctica para detectar fallas funcionales, inconsistencias visuales y elementos residuales que dificulten mantener el proyecto.",
+        "points": ["Revisión de rutas y recursos locales.", "Verificación en vista móvil.", "Entrega de hallazgos en formato claro."],
+        "cta": "Solicitar información",
+        "close": "Cerrar"
+      },
+      "en": {
+        "section": "Services",
+        "title": "Technical review",
+        "description": "Detection of visible errors, broken links, mobile issues, and dead code.",
+        "body": "Practical evaluation to detect functional issues, visual inconsistencies, and residual elements that make the project harder to maintain.",
+        "points": ["Review of routes and local resources.", "Mobile view verification.", "Findings delivered in a clear format."],
+        "cta": "Request information",
+        "close": "Close"
+      }
+    }
+  },
+  {
+    "id": "service-structure-modal",
+    "icon": "bi-diagram-3",
+    "badges": ["Components", "Files", "Scale", "Maintenance"],
+    "content": {
+      "es": {
+        "section": "Servicios",
+        "title": "Estructura de proyectos",
+        "description": "Organización de archivos, contenido y rutas para facilitar mantenimiento.",
+        "body": "Separación de contenido, estilos y comportamiento para que el sitio pueda crecer sin convertir el archivo principal en un bloque difícil de editar.",
+        "points": ["Componentes externos para contenido repetible.", "Estructura clara para futuras iteraciones.", "Preparación para agregar nuevos productos o publicaciones."],
+        "cta": "Solicitar información",
+        "close": "Cerrar"
+      },
+      "en": {
+        "section": "Services",
+        "title": "Project structure",
+        "description": "File, content, and route organization to simplify maintenance.",
+        "body": "Separation of content, styles, and behavior so the site can grow without turning the main file into something hard to edit.",
+        "points": ["External components for repeatable content.", "Clear structure for future iterations.", "Ready to add new products or publications."],
+        "cta": "Request information",
+        "close": "Close"
+      }
+    }
+  },
+  {
+    "id": "service-docs-modal",
+    "icon": "bi-journal-code",
+    "badges": ["Docs", "Reports", "Decisions", "Handoff"],
+    "content": {
+      "es": {
+        "section": "Servicios",
+        "title": "Documentación",
+        "description": "Reportes claros para explicar cambios, decisiones y siguientes iteraciones.",
+        "body": "Documentación enfocada en conservar decisiones, pasos de verificación y contexto suficiente para continuar el trabajo después.",
+        "points": ["Registro de decisiones técnicas.", "Entrega de hallazgos en formato claro.", "Preparación para agregar nuevos productos o publicaciones."],
+        "cta": "Solicitar información",
+        "close": "Cerrar"
+      },
+      "en": {
+        "section": "Services",
+        "title": "Documentation",
+        "description": "Clear reports explaining changes, decisions, and next iterations.",
+        "body": "Documentation focused on preserving decisions, verification steps, and enough context to continue work later.",
+        "points": ["Record of technical decisions.", "Findings delivered in a clear format.", "Ready to add new products or publications."],
+        "cta": "Request information",
+        "close": "Close"
+      }
+    }
+  }
+]

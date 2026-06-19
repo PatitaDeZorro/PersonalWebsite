@@ -1,0 +1,31 @@
+{
+  "items": [
+    {
+      "id": "bamboo-marketing",
+      "content": {
+        "es": {
+          "company": "Bamboo marketing & publicidad",
+          "period": "Junio 2026 - Actualmente",
+          "roleLabel": "Puesto",
+          "role": "Promotor de marca",
+          "activitiesLabel": "Actividades",
+          "activities": [
+            "Prospección de clientes para la marca.",
+            "Manejo de inventario."
+          ]
+        },
+        "en": {
+          "company": "Bamboo marketing & publicidad",
+          "period": "June 2026 - Present",
+          "roleLabel": "Role",
+          "role": "Brand promoter",
+          "activitiesLabel": "Activities",
+          "activities": [
+            "Client prospecting for the brand.",
+            "Inventory management."
+          ]
+        }
+      }
+    }
+  ]
+}

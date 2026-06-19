@@ -1,0 +1,93 @@
+{
+  "columns": [
+    {
+      "id": "academic",
+      "delay": 100,
+      "content": {
+        "es": { "title": "Formación Académica" },
+        "en": { "title": "Academic Education" }
+      },
+      "items": [
+        {
+          "logo": "assets/img/logos/logo_IPN.svg",
+          "fallback": "IPN",
+          "content": {
+            "es": { "title": "Maestría en Informática", "organization": "Instituto Politécnico Nacional", "licenseLabel": "Céd. Profesional:" },
+            "en": { "title": "MSc in Computer Science", "organization": "Instituto Politécnico Nacional", "licenseLabel": "Professional license:" }
+          }
+        },
+        {
+          "logo": "assets/img/logos/logo_UACM.svg",
+          "fallback": "UACM",
+          "content": {
+            "es": { "title": "Ingeniería en Software", "organization": "Universidad Autónoma de la Ciudad de México", "licenseLabel": "Céd. Profesional:" },
+            "en": { "title": "Software Engineering", "organization": "Universidad Autónoma de la Ciudad de México", "licenseLabel": "Professional license:" }
+          }
+        },
+        {
+          "logo": "assets/img/logos/logo_UnADM.svg",
+          "fallback": "UnADM",
+          "content": {
+            "es": { "title": "Técnico Superior Universitario en Telemática", "organization": "Universidad Abierta y a Distancia de México", "licenseLabel": "Céd. Profesional:" },
+            "en": { "title": "Associate Degree in Telematics", "organization": "Universidad Abierta y a Distancia de México", "licenseLabel": "Professional license:" }
+          }
+        },
+        {
+          "logo": "assets/img/logos/logo_IPN.svg",
+          "fallback": "IPN",
+          "content": {
+            "es": { "title": "Técnico en Telecomunicaciones", "organization": "Instituto Politécnico Nacional", "licenseLabel": "Céd. Profesional:" },
+            "en": { "title": "Telecommunications Technician", "organization": "Instituto Politécnico Nacional", "licenseLabel": "Professional license:" }
+          }
+        }
+      ]
+    },
+    {
+      "id": "continuing",
+      "delay": 200,
+      "content": {
+        "es": { "title": "Educación Continua" },
+        "en": { "title": "Continuous Education" }
+      },
+      "items": [
+        {
+          "content": {
+            "es": { "title": "Cisco Networking Academy" },
+            "en": { "title": "Cisco Networking Academy" }
+          },
+          "links": [
+            {
+              "href": "https://www.credly.com/badges/62824518-f12c-4520-b8d0-7441fded7ff7",
+              "content": {
+                "es": "Introducción a la ciberseguridad.",
+                "en": "Introduction to Cybersecurity."
+              }
+            }
+          ]
+        },
+        {
+          "content": {
+            "es": { "title": "Escuela Pública de Código" },
+            "en": { "title": "Public Code School" }
+          },
+          "links": [
+            {
+              "href": "https://drive.google.com/file/d/13o0p9kEIOIxiLWGdTmLyxNgC3QFGTudK/view?usp=drive_link",
+              "content": {
+                "es": "Control de versiones GIT.",
+                "en": "GIT version control."
+              }
+            },
+            {
+              "href": "https://drive.google.com/file/d/1cdnH8k1v1ekgqS1jashiicX7sdgX2KoD/view?usp=drive_link",
+              "content": {
+                "es": "Metodología de gestión de proyectos: SCRUM.",
+                "en": "Project management methodology: SCRUM."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "columns": [
+    {
+      "items": [
+        {
+          "value": 90,
+          "content": {
+            "es": { "label": "HTML / CSS" },
+            "en": { "label": "HTML / CSS" }
+          }
+        },
+        {
+          "value": 75,
+          "content": {
+            "es": { "label": "JavaScript" },
+            "en": { "label": "JavaScript" }
+          }
+        },
+        {
+          "value": 70,
+          "content": {
+            "es": { "label": "Python" },
+            "en": { "label": "Python" }
+          }
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "value": 70,
+          "content": {
+            "es": { "label": "SQL / Datos" },
+            "en": { "label": "SQL / Data" }
+          }
+        },
+        {
+          "value": 80,
+          "content": {
+            "es": { "label": "Git / GitHub Pages" },
+            "en": { "label": "Git / GitHub Pages" }
+          }
+        },
+        {
+          "value": 85,
+          "content": {
+            "es": { "label": "Documentación técnica" },
+            "en": { "label": "Technical documentation" }
+          }
+        }
+      ]
+    }
+  ]
+}
