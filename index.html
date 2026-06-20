@@ -1,63 +1,399 @@
-# Cómo agregar contenido editable
+<!DOCTYPE html>
+<html lang="es">
 
-El sitio mantiene sus secciones repetibles en archivos JSON para que puedan crecer sin duplicar bloques HTML.
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Edson J. Ávila - Portafolio</title>
+  <meta content="Portafolio personal de Edson J. Ávila, ingeniero de software y maestro en informática." name="description" data-i18n-attr="content:meta.description">
+  <meta content="software, informática, datos, desarrollo web, portafolio" name="keywords">
+  <meta content="#149ddd" name="theme-color">
+  <meta content="index, follow" name="robots">
+  <meta content="20260619-404-logo-dark" name="asset-version">
+  <meta content="Edson J. Ávila - Portafolio" property="og:title" data-i18n-attr="content:meta.title">
+  <meta content="Portafolio personal de Edson J. Ávila, ingeniero de software y maestro en informática." property="og:description" data-i18n-attr="content:meta.description">
+  <meta content="website" property="og:type">
+  <meta content="https://patitadezorro.dpdns.org/" property="og:url">
+  <meta content="https://patitadezorro.dpdns.org/assets/img/hero_1.webp" property="og:image">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="Edson J. Ávila - Portafolio" name="twitter:title" data-i18n-attr="content:meta.title">
+  <meta content="Portafolio personal de Edson J. Ávila, ingeniero de software y maestro en informática." name="twitter:description" data-i18n-attr="content:meta.description">
+  <meta content="https://patitadezorro.dpdns.org/assets/img/hero_1.webp" name="twitter:image">
+  <link href="https://patitadezorro.dpdns.org/" rel="canonical">
+  <link href="https://api.web3forms.com" rel="preconnect">
+  <link href="//api.web3forms.com" rel="dns-prefetch">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Edson J. Ávila",
+      "url": "https://patitadezorro.dpdns.org/",
+      "image": "https://patitadezorro.dpdns.org/assets/img/logo_personal.svg",
+      "description": "Ingeniero de software y maestro en informática enfocado en soluciones web, análisis de datos y tecnología práctica.",
+      "sameAs": [
+        "https://github.com/PatitaDeZorro",
+        "https://www.linkedin.com/in/patitadezorro"
+      ],
+      "knowsAbout": [
+        "Software engineering",
+        "Web development",
+        "Data analysis",
+        "Static websites",
+        "Technical documentation"
+      ]
+    }
+  </script>
 
-## Portafolio
+  <!-- Favicons -->
+  <link href="assets/img/favicon.svg" rel="icon">
 
-La sección de portafolio se genera desde:
+  <!-- Fonts -->
+  <link href="assets/css/fonts.css?v=20260619-404-logo-dark" rel="stylesheet">
 
-`assets/data/portfolio.json`
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-Para agregar un nuevo proyecto:
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css?v=20260619-404-logo-dark" rel="stylesheet">
+  <link href="assets/css/modal.css?v=20260619-404-logo-dark" rel="stylesheet">
 
-1. Copia las imágenes del proyecto dentro de `assets/img/portfolio/`.
-2. Abre `assets/data/portfolio.json`.
-3. Duplica un objeto existente.
-4. Cambia estos campos:
+</head>
 
-- `id`: identificador único del modal, por ejemplo `portfolio-memory-game-modal`.
-- `category`: categoría usada por los filtros.
-  - `app`: Web
-  - `product`: Datos
-  - `branding`: Consultoría
-  - `books`: Documentos
-- `image`: imagen principal de la tarjeta.
-- `gallery`: imágenes del modal.
-- `badges`: tecnologías o etiquetas del proyecto.
-- `link`: enlace del botón principal.
-- `content.es`: textos en español.
-- `content.en`: textos en inglés.
+<body class="index-page" data-page="index">
+  <a class="skip-link" href="#main-content">Saltar al contenido / Skip to content</a>
+  <noscript>
+    <div class="noscript-warning">Este sitio requiere JavaScript para mostrar su contenido completo. / This site requires JavaScript to show its full content.</div>
+  </noscript>
 
-No es necesario editar `index.html`, `assets/i18n/es.json`, `assets/i18n/en.json` ni `assets/js/modals.js` para agregar proyectos de portafolio.
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
 
-## Servicios
+    <div class="personal-logo">
+      <img src="assets/img/logo_personal.svg" alt="Edson J. Ávila logo">
+    </div>
 
-La sección de servicios se genera desde:
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <h1 class="sitename" data-i18n="site.name">Edson J. Ávila</h1>
+    </a>
 
-`assets/data/services.json`
+    <div class="social-links text-center">
+      <a href="https://github.com/PatitaDeZorro" class="github" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="bi bi-github" aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com/in/patitadezorro" class="linkedin" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+    </div>
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span data-i18n="nav.home">Home</span></a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> <span data-i18n="nav.about">About</span></a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> <span data-i18n="nav.resume">Resume</span></a></li>
+        <li><a href="#professional"><i class="bi bi-briefcase navicon"></i> <span data-i18n="nav.professional">Trayectoria profesional</span></a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> <span data-i18n="nav.portfolio">Portfolio</span></a></li>
+        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> <span data-i18n="nav.services">Services</span></a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> <span data-i18n="nav.contact">Contact</span></a></li>
+      </ul>
+    </nav>
 
-Para agregar un servicio:
+    <div class="sidebar-actions" aria-label="Preferencias" data-i18n-attr="aria-label:controls.preferences">
+      <button type="button" class="control-button theme-toggle" aria-label="Cambiar tema" data-i18n-attr="aria-label:controls.theme">
+        <i class="bi bi-moon-stars"></i>
+        <span data-i18n="controls.themeShort">Tema</span>
+      </button>
 
-1. Duplica un objeto existente.
-2. Cambia `id`, `icon`, `badges` y los textos dentro de `content.es` y `content.en`.
-3. Usa un icono de Bootstrap Icons en `icon`, por ejemplo `bi-window-sidebar`.
+      <div class="language-switch" aria-label="Language selector">
+        <i class="bi bi-translate"></i>
+        <button type="button" class="lang-option" data-lang="es" aria-label="Español">ES</button>
+        <button type="button" class="lang-option" data-lang="en" aria-label="English">EN</button>
+      </div>
+    </div>
 
-El modal del servicio se crea automáticamente desde el mismo objeto.
+  </header>
 
-## Trayectoria académica
+  <main id="main-content" class="main" tabindex="-1">
 
-La sección de trayectoria se genera desde:
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
 
-`assets/data/resume.json`
+      <div class="hero-slider swiper init-swiper" data-aos="fade-in">
+        <script type="application/json" class="swiper-config">
+          {
+            "loop": true,
+            "speed": 900,
+            "effect": "fade",
+            "fadeEffect": {
+              "crossFade": true
+            },
+            "autoplay": {
+              "delay": 4500,
+              "disableOnInteraction": false
+            }
+          }
+        </script>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="assets/img/hero_1.webp" alt="Presentación visual del portafolio de Edson J. Ávila" fetchpriority="high" decoding="async">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/img/hero_2.webp" alt="Trabajo web y tecnología" loading="lazy" decoding="async">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/img/hero_3.webp" alt="Desarrollo de soluciones digitales" loading="lazy" decoding="async">
+          </div>
+        </div>
+      </div>
 
-Para agregar formación académica:
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2 data-i18n="site.name">Edson J. Ávila</h2>
+        <h3 data-i18n="hero.degree1">Mtro. en Informática</h3>
+        <h3 data-i18n="hero.degree2">Ing. en Software</h3>
+        <p><span data-i18n="hero.prefix">Soy</span> <span class="typed" data-i18n="hero.typedFirst" data-i18n-attr="data-typed-items:hero.typedItems">desarrollador</span></p>
+      </div>
 
-1. Agrega un objeto en la columna `academic`.
-2. Define `logo`, `fallback` y los textos en `content.es` y `content.en`.
+    </section><!-- /Hero Section -->
 
-Para agregar educación continua:
+    <!-- About Section -->
+    <section id="about" class="about section">
 
-1. Agrega un objeto en la columna `continuing`.
-2. Define el título y la lista de enlaces en `links`.
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2 data-i18n="about.title">About</h2>
+        <p data-i18n="about.summary">Construyo soluciones digitales con una base sólida en ingeniería de software, informática y análisis de datos.</p>
+      </div><!-- End Section Title -->
 
-GitHub Pages puede publicar esta estructura sin backend porque todo se carga como archivos estáticos: HTML, CSS, JS, JSON e imágenes.
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/logo_personal.svg" class="img-fluid about-logo" alt="Edson J. Ávila logo">
+          </div>
+          <div class="col-lg-8 content">
+            <h3 data-i18n="about.profileTitle">Ingeniero de Software y Maestro en Informática.</h3>
+            <p class="fst-italic py-3" data-i18n="about.intro">
+              Me interesa convertir ideas técnicas en herramientas claras, mantenibles y útiles para personas reales.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.info.areaLabel">Área:</strong> <span data-i18n="about.info.areaValue">Software, datos y tecnología</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.info.degreeLabel">Formación:</strong> <span data-i18n="about.info.degreeValue">Maestría en Informática</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.info.focusLabel">Enfoque:</strong> <span data-i18n="about.info.focusValue">Soluciones web y análisis</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.info.locationLabel">Ubicación:</strong> <span data-i18n="about.info.locationValue">México</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.info.githubLabel">GitHub:</strong> <span>PatitaDeZorro</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.info.languagesLabel">Idiomas:</strong> <span data-i18n="about.info.languagesValue">Español / Inglés</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.info.availabilityLabel">Disponibilidad:</strong> <span data-i18n="about.info.availabilityValue">Proyectos seleccionados</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.info.contactLabel">Contacto:</strong> <span data-i18n="about.info.contactValue">Formulario web</span></li>
+                </ul>
+              </div>
+            </div>
+            <p class="py-3" data-i18n="about.body">
+              Este portafolio reúne mi preparación académica, proyectos en desarrollo y servicios orientados a crear presencia digital, organizar información y resolver problemas con tecnología práctica.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2 data-i18n="skills.title">Skills</h2>
+        <p data-i18n="skills.summary">Herramientas y áreas que uso para diseñar, construir y mejorar soluciones digitales.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row skills-content skills-animation" id="skills-items"></div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2 data-i18n="resume.title">Resume</h2>
+        <p data-i18n="resume.summary">Formación académica y experiencia profesional con énfasis en tecnología, atención, análisis y mejora continua.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row" id="resume-items"></div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Professional Section -->
+    <section id="professional" class="professional section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2 data-i18n="professional.title">Trayectoria Profesional</h2>
+        <p data-i18n="professional.summary">Experiencia laboral organizada por periodo, puesto y actividades principales.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="professional-timeline" id="professional-items"></div>
+      </div>
+
+    </section><!-- /Professional Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2 data-i18n="portfolio.title">Portfolio</h2>
+        <p data-i18n="portfolio.summary">Una selección inicial de líneas de trabajo. Las fichas detalladas se conectarán después con datos específicos de cada proyecto.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active" data-i18n="portfolio.filters.all" role="button" tabindex="0">All</li>
+            <li data-filter=".filter-app" data-i18n="portfolio.filters.app" role="button" tabindex="0">Web</li>
+            <li data-filter=".filter-product" data-i18n="portfolio.filters.product" role="button" tabindex="0">Datos</li>
+            <li data-filter=".filter-branding" data-i18n="portfolio.filters.branding" role="button" tabindex="0">Consultoría</li>
+            <li data-filter=".filter-books" data-i18n="portfolio.filters.books" role="button" tabindex="0">Documentos</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" id="portfolio-items" data-aos="fade-up" data-aos-delay="200"></div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2 data-i18n="services.title">Services</h2>
+        <p data-i18n="services.summary">Servicios pensados para proyectos pequeños o medianos que necesitan claridad técnica, presencia digital y crecimiento ordenado.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4" id="services-items"></div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2 data-i18n="contact.title">Contact</h2>
+        <p data-i18n="contact.summary">Si tienes una idea, una mejora pendiente o un proyecto que necesita orden técnico, puedes escribirme desde este formulario.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+
+          <div class="col-lg-8">
+            <form action="https://api.web3forms.com/submit" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <input type="hidden" name="access_key" value="e551d478-32d1-46de-bd88-e919fe265d13">
+              <input type="checkbox" name="botcheck" class="d-none" style="display: none;">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2" data-i18n="contact.form.name">Your Name</label>
+                  <input type="text" name="name" id="name-field" class="form-control" autocomplete="name" maxlength="100" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2" data-i18n="contact.form.email">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email-field" autocomplete="email" maxlength="254" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2" data-i18n="contact.form.subject">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" autocomplete="off" maxlength="150" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2" data-i18n="contact.form.message">Message</label>
+                  <textarea class="form-control" name="message" rows="10" id="message-field" autocomplete="off" maxlength="3000" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading" data-i18n="contact.form.loading">Loading</div>
+                  <div class="error-message" role="alert" aria-live="polite"></div>
+                  <div class="sent-message" role="status" aria-live="polite" data-i18n="contact.form.success">Your message has been sent. Thank you!</div>
+
+                  <button type="submit" data-i18n="contact.form.submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <div id="imagenes-modal-root"></div>
+  <div id="texto-modal-root"></div>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span id="copyright-year">2026</span> <span>Copyright</span> <strong class="px-1 sitename">Edson J. Ávila</strong> <span>All Rights Reserved</span></p>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Volver arriba" data-i18n-attr="aria-label:controls.backToTop"><i class="bi bi-arrow-up-short" aria-hidden="true"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader" aria-hidden="true"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/i18n.js?v=20260619-404-logo-dark"></script>
+  <script src="assets/js/preferences.js?v=20260619-404-logo-dark"></script>
+  <script src="assets/js/content-utils.js?v=20260619-404-logo-dark"></script>
+  <script src="assets/js/skills.js?v=20260619-404-logo-dark"></script>
+  <script src="assets/js/resume.js?v=20260619-404-logo-dark"></script>
+  <script src="assets/js/professional.js?v=20260619-404-logo-dark"></script>
+  <script src="assets/js/services.js?v=20260619-404-logo-dark"></script>
+  <script src="assets/js/portfolio.js?v=20260619-404-logo-dark"></script>
+  <script src="assets/js/modals.js?v=20260619-404-logo-dark"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js?v=20260619-404-logo-dark"></script>
+
+</body>
+
+</html>
