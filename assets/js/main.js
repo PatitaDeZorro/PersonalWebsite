@@ -90,6 +90,63 @@
   document.addEventListener('scroll', toggleScrollTop, { passive: true });
 
   /**
+   * Sidebar quick actions
+   */
+  const sidebarStatus = document.querySelector('.sidebar-action-status');
+  let sidebarStatusTimer;
+
+  function showSidebarStatus(text) {
+    if (!sidebarStatus) return;
+
+    sidebarStatus.textContent = text;
+    window.clearTimeout(sidebarStatusTimer);
+    sidebarStatusTimer = window.setTimeout(() => {
+      sidebarStatus.textContent = '';
+    }, 2600);
+  }
+
+  async function copyText(value) {
+    if (navigator.clipboard?.writeText) {
+      await navigator.clipboard.writeText(value);
+      return;
+    }
+
+    const field = document.createElement('textarea');
+    field.value = value;
+    field.setAttribute('readonly', '');
+    field.style.position = 'fixed';
+    field.style.opacity = '0';
+    document.body.appendChild(field);
+    field.select();
+    document.execCommand('copy');
+    field.remove();
+  }
+
+  document.querySelector('.share-site')?.addEventListener('click', async () => {
+    const canonical = document.querySelector('link[rel="canonical"]')?.href || window.location.href;
+    const shareData = {
+      title: message('meta.title', document.title),
+      text: message('controls.shareText', 'Take a look at this portfolio.'),
+      url: canonical
+    };
+
+    try {
+      if (navigator.share) {
+        await navigator.share(shareData);
+        showSidebarStatus(message('controls.shareDone', 'Portfolio shared.'));
+        return;
+      }
+
+      await copyText(canonical);
+      showSidebarStatus(message('controls.shareCopied', 'Portfolio link copied.'));
+    } catch (error) {
+      if (error?.name !== 'AbortError') {
+        showSidebarStatus(message('controls.shareFailed', 'Could not share. Please try again.'));
+      }
+    }
+  });
+
+  /**
    * Static contact form submit
    */
   document.querySelectorAll('.php-email-form').forEach(function(contactForm) {
@@ -102,15 +159,29 @@
       let errorMessage = thisForm.querySelector('.error-message');
       let sentMessage = thisForm.querySelector('.sent-message');
 
+      function resetCaptcha() {
+        if (window.hcaptcha && typeof window.hcaptcha.reset === 'function') {
+          window.hcaptcha.reset();
+        }
+      }
+
       if (!action) {
         errorMessage.textContent = message('contact.form.errorActionMissing', 'The form action property is not set!');
         errorMessage.classList.add('d-block');
         return;
       }
 
-      loading.classList.add('d-block');
       errorMessage.classList.remove('d-block');
       sentMessage.classList.remove('d-block');
+
+      let captchaResponse = thisForm.querySelector('textarea[name="h-captcha-response"]');
+      if (!captchaResponse || !captchaResponse.value.trim()) {
+        errorMessage.textContent = message('contact.form.errorCaptchaMissing', 'Please complete the captcha before sending your message.');
+        errorMessage.classList.add('d-block');
+        return;
+      }
+
+      loading.classList.add('d-block');
 
       fetch(action, {
         method: 'POST',
@@ -126,12 +197,15 @@
         if (data.success) {
           sentMessage.classList.add('d-block');
           thisForm.reset();
+          resetCaptcha();
         } else {
+          resetCaptcha();
           throw new Error(data.message || message('contact.form.errorSubmissionFailed', 'Form submission failed.'));
         }
       })
       .catch(error => {
         loading.classList.remove('d-block');
+        resetCaptcha();
         errorMessage.textContent = error.message || error;
         errorMessage.classList.add('d-block');
       });
@@ -259,9 +333,6 @@
           isotopeItem.querySelector('.isotope-filters .filter-active').classList.remove('filter-active');
           this.classList.add('filter-active');
           arrangeIsotope();
-          if (typeof aosInit === 'function') {
-            aosInit();
-          }
         }, false);
       });
 

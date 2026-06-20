@@ -30,13 +30,14 @@
 
     const detailsLabel = language === "en" ? "More details" : "Más detalles";
 
-    container.innerHTML = items.map((item) => {
+    container.innerHTML = items.map((item, index) => {
       const content = contentFor(item, language);
       const title = text(content.title);
+      const delay = 80 + (index % 6) * 60;
 
       return `
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-${text(item.category)}">
-          <div class="portfolio-content h-100">
+          <div class="portfolio-content portfolio-card-enter h-100" style="--portfolio-enter-delay: ${delay}ms;">
             <img src="${text(item.image)}" class="img-fluid" alt="${title}" loading="lazy" decoding="async">
             <div class="portfolio-info">
               <h4>${title}</h4>

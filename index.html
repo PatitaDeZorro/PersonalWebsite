@@ -9,19 +9,23 @@
   <meta content="software, informática, datos, desarrollo web, portafolio" name="keywords">
   <meta content="#149ddd" name="theme-color">
   <meta content="index, follow" name="robots">
-  <meta content="20260619-404-logo-dark" name="asset-version">
+  <meta content="20260620-v18-filter-animation-fix" name="asset-version">
   <meta content="Edson J. Ávila - Portafolio" property="og:title" data-i18n-attr="content:meta.title">
   <meta content="Portafolio personal de Edson J. Ávila, ingeniero de software y maestro en informática." property="og:description" data-i18n-attr="content:meta.description">
   <meta content="website" property="og:type">
   <meta content="https://patitadezorro.dpdns.org/" property="og:url">
-  <meta content="https://patitadezorro.dpdns.org/assets/img/hero_1.webp" property="og:image">
+  <meta content="https://patitadezorro.dpdns.org/assets/img/hero/hero_1.webp" property="og:image">
   <meta content="summary_large_image" name="twitter:card">
   <meta content="Edson J. Ávila - Portafolio" name="twitter:title" data-i18n-attr="content:meta.title">
   <meta content="Portafolio personal de Edson J. Ávila, ingeniero de software y maestro en informática." name="twitter:description" data-i18n-attr="content:meta.description">
-  <meta content="https://patitadezorro.dpdns.org/assets/img/hero_1.webp" name="twitter:image">
+  <meta content="https://patitadezorro.dpdns.org/assets/img/hero/hero_1.webp" name="twitter:image">
   <link href="https://patitadezorro.dpdns.org/" rel="canonical">
   <link href="https://api.web3forms.com" rel="preconnect">
   <link href="//api.web3forms.com" rel="dns-prefetch">
+  <link href="https://web3forms.com" rel="preconnect">
+  <link href="//web3forms.com" rel="dns-prefetch">
+  <link href="https://hcaptcha.com" rel="preconnect">
+  <link href="//hcaptcha.com" rel="dns-prefetch">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -48,7 +52,7 @@
   <link href="assets/img/favicon.svg" rel="icon">
 
   <!-- Fonts -->
-  <link href="assets/css/fonts.css?v=20260619-404-logo-dark" rel="stylesheet">
+  <link href="assets/css/fonts.css?v=20260620-v18-filter-animation-fix" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -57,8 +61,8 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
-  <link href="assets/css/main.css?v=20260619-404-logo-dark" rel="stylesheet">
-  <link href="assets/css/modal.css?v=20260619-404-logo-dark" rel="stylesheet">
+  <link href="assets/css/main.css?v=20260620-v18-filter-animation-fix" rel="stylesheet">
+  <link href="assets/css/modal.css?v=20260620-v18-filter-animation-fix" rel="stylesheet">
 
 </head>
 
@@ -101,11 +105,18 @@
         <span data-i18n="controls.themeShort">Tema</span>
       </button>
 
+      <button type="button" class="control-button share-site" aria-label="Compartir portafolio" data-i18n-attr="aria-label:controls.share">
+        <i class="bi bi-share"></i>
+        <span data-i18n="controls.shareShort">Compartir</span>
+      </button>
+
       <div class="language-switch" aria-label="Language selector">
         <i class="bi bi-translate"></i>
         <button type="button" class="lang-option" data-lang="es" aria-label="Español">ES</button>
         <button type="button" class="lang-option" data-lang="en" aria-label="English">EN</button>
       </div>
+
+      <p class="sidebar-action-status" aria-live="polite"></p>
     </div>
 
   </header>
@@ -132,13 +143,22 @@
         </script>
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="assets/img/hero_1.webp" alt="Presentación visual del portafolio de Edson J. Ávila" fetchpriority="high" decoding="async">
+            <picture class="hero-media">
+              <source srcset="assets/img/hero/hero_1-mobile.webp" media="(max-width: 575px)">
+              <img src="assets/img/hero/hero_1.webp" alt="Presentación visual del portafolio de Edson J. Ávila" fetchpriority="high" decoding="async">
+            </picture>
           </div>
           <div class="swiper-slide">
-            <img src="assets/img/hero_2.webp" alt="Trabajo web y tecnología" loading="lazy" decoding="async">
+            <picture class="hero-media">
+              <source srcset="assets/img/hero/hero_2-mobile.webp" media="(max-width: 575px)">
+              <img src="assets/img/hero/hero_2.webp" alt="Trabajo web y tecnología" loading="lazy" decoding="async">
+            </picture>
           </div>
           <div class="swiper-slide">
-            <img src="assets/img/hero_3.webp" alt="Desarrollo de soluciones digitales" loading="lazy" decoding="async">
+            <picture class="hero-media">
+              <source srcset="assets/img/hero/hero_3-mobile.webp" media="(max-width: 575px)">
+              <img src="assets/img/hero/hero_3.webp" alt="Desarrollo de soluciones digitales" loading="lazy" decoding="async">
+            </picture>
           </div>
         </div>
       </div>
@@ -309,7 +329,7 @@
         <div class="row gy-4 justify-content-center">
 
           <div class="col-lg-8">
-            <form action="https://api.web3forms.com/submit" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <form id="contact-form" action="https://api.web3forms.com/submit" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <input type="hidden" name="access_key" value="e551d478-32d1-46de-bd88-e919fe265d13">
               <input type="checkbox" name="botcheck" class="d-none" style="display: none;">
               <div class="row gy-4">
@@ -332,6 +352,12 @@
                 <div class="col-md-12">
                   <label for="message-field" class="pb-2" data-i18n="contact.form.message">Message</label>
                   <textarea class="form-control" name="message" rows="10" id="message-field" autocomplete="off" maxlength="3000" required=""></textarea>
+                </div>
+
+                <div class="col-md-12">
+                  <div class="captcha-wrap">
+                    <div class="h-captcha" data-captcha="true"></div>
+                  </div>
                 </div>
 
                 <div class="col-md-12 text-center">
@@ -381,18 +407,19 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/js/i18n.js?v=20260619-404-logo-dark"></script>
-  <script src="assets/js/preferences.js?v=20260619-404-logo-dark"></script>
-  <script src="assets/js/content-utils.js?v=20260619-404-logo-dark"></script>
-  <script src="assets/js/skills.js?v=20260619-404-logo-dark"></script>
-  <script src="assets/js/resume.js?v=20260619-404-logo-dark"></script>
-  <script src="assets/js/professional.js?v=20260619-404-logo-dark"></script>
-  <script src="assets/js/services.js?v=20260619-404-logo-dark"></script>
-  <script src="assets/js/portfolio.js?v=20260619-404-logo-dark"></script>
-  <script src="assets/js/modals.js?v=20260619-404-logo-dark"></script>
+  <script src="assets/js/i18n.js?v=20260620-v18-filter-animation-fix"></script>
+  <script src="assets/js/preferences.js?v=20260620-v18-filter-animation-fix"></script>
+  <script src="assets/js/content-utils.js?v=20260620-v18-filter-animation-fix"></script>
+  <script src="assets/js/skills.js?v=20260620-v18-filter-animation-fix"></script>
+  <script src="assets/js/resume.js?v=20260620-v18-filter-animation-fix"></script>
+  <script src="assets/js/professional.js?v=20260620-v18-filter-animation-fix"></script>
+  <script src="assets/js/services.js?v=20260620-v18-filter-animation-fix"></script>
+  <script src="assets/js/portfolio.js?v=20260620-v18-filter-animation-fix"></script>
+  <script src="assets/js/modals.js?v=20260620-v18-filter-animation-fix"></script>
+  <script src="https://web3forms.com/client/script.js" async defer></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js?v=20260619-404-logo-dark"></script>
+  <script src="assets/js/main.js?v=20260620-v18-filter-animation-fix"></script>
 
 </body>
 
